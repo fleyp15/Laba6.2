@@ -1,0 +1,66 @@
+1)
+public class One {
+    int number;
+    double value;
+    String name;
+    
+    public One(int number, double value, String name) {
+        this.number = number;
+        this.value = value;
+        this.name = name;
+    }
+}
+
+2)
+public class Two {
+    int age;
+    String city;
+    boolean isActive;
+    
+    public Two(int age, String city, boolean isActive) {
+        this.age = age;
+        this.city = city;
+        this.isActive = isActive;
+    }
+}
+
+3)
+public class Three {
+    String color;
+    double weight;
+    boolean isFresh;
+    
+    public Three(String color, double weight, boolean isFresh) {
+        this.color = color;
+        this.weight = weight;
+        this.isFresh = isFresh;
+    }
+}
+
+4)
+public class Main {
+    public static void main(String[] args) {
+        One oneObject = new One(10, 3.14, "Object One");
+        Two twoObject = new Two(25, "New York", true);
+        Three threeObject = new Three("Red", 0.5, true);
+        
+        // Виведення значень змінних екземплярів класу One
+        System.out.println("One object:");
+        System.out.println("Number: " + oneObject.number);
+        System.out.println("Value: " + oneObject.value);
+        System.out.println("Name: " + oneObject.name);
+        
+        // Виведення значень змінних екземплярів класу Two
+        System.out.println("\nTwo object:");
+        System.out.println("Age: " + twoObject.age);
+        System.out.println("City: " + twoObject.city);
+        System.out.println("Is Active: " + twoObject.isActive);
+        
+        // Виведення значень змінних екземплярів класу Three
+        System.out.println("\nThree object:");
+        System.out.println("Color: " + threeObject.color);
+        System.out.println("Weight: " + threeObject.weight);
+        System.out.println("Is Fresh: " + threeObject.isFresh);
+    }
+}
+
